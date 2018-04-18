@@ -1,0 +1,934 @@
+    1  sudo apt update
+    2  sudo apt -y upgrade
+    3  cd ~/Downloads/
+    4  ls
+    5  sudo apt -y upgrade
+    6  chmod +x ubuntu_install.sh 
+    7  ./ubuntu_install.sh 
+    8  ls -al
+    9  cd workspace
+   10  ls -al
+   11  sudo apt install git
+   12  git clone https://github.com/platform-acceleration-lab/prerequisite-code.git
+   13  cd prerequisite-code/
+   14  java -version
+   15  ./gradlew build
+   16  cf
+   17  cf login -a https://api.sys.longs.pal.pivotal.io
+   18  cf login -a api.run.pivotal.io
+   19  cf login -a https://api.sys.longs.pal.pivotal.io
+   20  ./gradlew build
+   21  cf push
+   22  cf urls
+   23  urls
+   24  ./gradlew build
+   25  ./gradlew prerequisites -PprerequisiteUrl=http://https://api.sys.longs.pal.pivotal.io
+   26  ./gradlew prerequisites -PprerequisiteUrl=http://${YOUR_APP_URL}
+   27  ./gradlew prerequisites -PprerequisiteUrl=http://${https://api.sys.longs.pal.pivotal.io}
+   28  ./gradlew build
+   29  ./gradlew prerequisites -PprerequisiteUrl=http://${YOUR_APP_URL}
+   30  ./gradlew prerequisites -PprerequisiteUrl=http://https://api.sys.longs.pal.pivotal.io
+   31  ./gradlew prerequisites -PprerequisiteUrl=https://api.sys.longs.pal.pivotal.io
+   32  ./gradlew prerequisites -PprerequisiteUrl:http://prerequisite-funny-chipmunk.apps.longs.pal.pivotal.io/
+   33  ./gradlew prerequisites -PprerequisiteUrl=http://prerequisite-funny-chipmunk.apps.longs.pal.pivotal.io/
+   34  cf logout
+   35  cf login
+   36  cf logout
+   37  cf login -a api.run.pivotal.io
+   38  cd ..
+   39  mkdir -p  ~/workspace/use-gradle
+   40  cd ~/workspace/use-gradle
+   41  gradle wrapper
+   42  ls -l
+   43  ./gradlew tasks
+   44  cls
+   45  clear
+   46  gradlew
+   47  ./gradlew
+   48  ./gradlew help --tasks
+   49  ./gradlew tasks
+   50  touch build.gradle
+   51  idea .
+   52  A
+   53  clear
+   54  ./gradlew sayHello
+   55  ./gradlew tasks
+   56  ./gradlew tasks -all
+   57  ./gradlew tasks --all
+   58  ./gradlew tasks
+   59  ./gradlew sayHello
+   60  ./gradlew tasks
+   61  ./gradlew sayHello sayGoodbye
+   62  ./gradlew sH sG
+   63  ./gradlew sayGoodbye sayHello
+   64  ./gradlew sG sH
+   65  clear
+   66  ./gradlew tasks
+   67  ./gradlew printTime
+   68  ./gradlew sayHello
+   69  ./gradlew sG sH
+   70  clear
+   71  cd ..
+   72  cd workspace/
+   73  ls
+   74  ls -l
+   75  mkdir -p advanced-gradle
+   76  cd advanced-gradle/
+   77  touch build.gradle
+   78  ls -l
+   79  gradle wrapper
+   80  ls -l
+   81  clear
+   82  ./gradlew tasks
+   83  ./gradlew clean build --dry-run
+   84  cd ..
+   85  mkdir -p assignment-submission
+   86  cd assignment-submission
+   87  gradle wrapper
+   88  ;s
+   89  ls
+   90  touch build.gradle
+   91  ./gradlew tasks
+   92  .gradlew testAssignment
+   93  ./gradlew testAssignment
+   94  ./gradlew testAssignment -PexampleUrl="http://www.example.com
+   95  "
+   96  ./gradlew testAssignment -PexampleUrl=http://www.example.com
+   97  "
+   98  ./gradlew tasks
+   99  ./gradlew testAssignment -PexampleUrl=http://www.example.com
+  100  touch build.gradle
+  101  ./gradlew tasks
+  102  ./gradlew testAssignment -PexampleUrl=http://www.example.com
+  103  vi build.gradle
+  104  ./gradlew testAssignment
+  105  ./gradlew testAssignment -PexampleUrl=http://www.example.com
+  106  cd ..
+  107  ls
+  108  git
+  109  clear
+  110  ls -al
+  111  git clone https://github.com/phanes72/pal-tracker.git
+  112  ls -l
+  113  cd pal-tracker/
+  114  ls -l
+  115  gradle wrapper
+  116  ls 
+  117  touch build.gradle
+  118  ls -al
+  119  idea .
+  120  ./gradlew build
+  121  vi build.gradle
+  122  gradle --status
+  123  ls -al
+  124  touch gradle.settings
+  125  rm gradle.settings
+  126  touch settings.gradle
+  127  cd src/main/java
+  128  cd ..
+  129  ./gradlew build
+  130  ./gradlew tasks
+  131  ./gradlew bootRun
+  132  clear
+  133  ./gradlew bootRun
+  134  ps -ef
+  135  ps -ef | grep 'pal_user'
+  136  kill 8080
+  137  clear
+  138  gradle --status
+  139  kill 13040
+  140  gradle --status
+  141  kill 13739
+  142  gradle --status
+  143  clear
+  144  ./gradlew bootRun
+  145  kill -p 8080
+  146  kill 8080
+  147  gradle --status
+  148  clear
+  149  cf login https://api.sys.longs.pal.pivotal.io
+  150  cf login -a https://api.sys.longs.pal.pivotal.io
+  151  cf target
+  152  cf push
+  153  cf target
+  154  ls -l
+  155  ./gradlew build
+  156  cf push
+  157  ./gradlew build
+  158  cf push
+  159  cd .. 
+  160  ls
+  161  cd assignment-submission/
+  162  ./gradlew cloudNativeDeveloperSimpleApp -PserverUrl=https://pal-tracker-boisterous-raven.apps.longs.pal.pivotal.io/
+  163  ./gradlew build
+  164  cd ..
+  165  cd pal-tracker/
+  166  ./gradlew build
+  167  cf push
+  168  cd ..
+  169  ls
+  170  cd assignment-submission/
+  171  ./gradlew cloudNativeDeveloperSimpleApp -PserverUrl=https://pal-tracker-boisterous-raven.apps.longs.pal.pivotal.io/
+  172  git push
+  173  cd ..
+  174  cd pal-worker
+  175  ls -al
+  176  cd pal-tracker
+  177  git push
+  178  ./gradlew bootRun
+  179  git cherry-pick deployment-start
+  180  git commit
+  181  git config
+  182  git cherry-pick deployment-start
+  183  git config user.name "phanes72"
+  184  git cherry-pick deployment-start
+  185  git commit
+  186  git config --global user.email "phanes72@gmail.com"
+  187  git push
+  188  git cherry-pick deployment-start
+  189  git commit
+  190  git push
+  191  git cherry-pick deployment-start
+  192  ./gradlew bootRun
+  193  WELCOME_MESSAGE=hello ./gradlew bootRun
+  194  ./gradlew bootRun
+  195  WELCOME_MESSAGE=hello ./gradlew bootRun
+  196  .gradlew --status
+  197  ./gradlew --status
+  198  WELCOME_MESSAGE=hello ./gradlew bootRun
+  199  jps
+  200  kill 12342
+  201  jps
+  202  WELCOME_MESSAGE=hello ./gradlew clean bootRun
+  203  jps
+  204  kill 18191
+  205  jps
+  206  ./gradlew bootRun
+  207  pwd
+  208  cd workspace/
+  209  cd pal-tracker
+  210  git status
+  211  git checkout out/production/classes/io/pivotal/pal/tracker/PalTrackerApplication.class
+  212  git status
+  213  ls -al
+  214  cat .gitignore
+  215  vi .gitignore
+  216  git add .gitignore
+  217  git status
+  218  git add src
+  219  git status
+  220  ./gradlew clean build
+  221  git cherry-pick mvc-solution
+  222  git commit -m"Some Tests Fixed"
+  223  git cherry-pick mvc-solution
+  224  git status
+  225  git cherry-pick mvc-solution
+  226  cd ..
+  227  git clone https://github.com/kushalzone/pal-tracker-old.git
+  228  git clone https://github.com/kushalzone/pal-tracker1.git bob
+  229  rm -rf pal-tracker
+  230  git clone https://github.com/kushalzone/pal-tracker.git
+  231  cd pal-tracker
+  232  git cherry-pick mvc-solution
+  233  git status
+  234  git cherry-pick --abort
+  235  git status
+  236  git remotes
+  237  git remove -v
+  238  git remote -v
+  239  git checkout -b mvc-solution
+  240  git checkout master
+  241  git merge mvc-solution
+  242  git status
+  243  git push
+  244  ls
+  245  ./gradlew clean build
+  246  cf login
+  247  cf apps
+  248  cf push
+  249  cf apps
+  250  cd ..
+  251  cd assignment-submission/
+  252  ./gradlew cloudNativeDeveloperRest -PserverUrl=https://pal-tracker-interested-quoll.apps.longs.pal.pivotal.io
+  253  cd ../pal-tracker
+  254  git cherry-pick migration-start
+  255  git status
+  256  git add .
+  257  git commit -m"Manifest file restored"
+  258  git status
+  259  clear
+  260  git cherry-pick migration-start
+  261  git push
+  262  mysql -uroot < databases/tracker/create_databases.sql
+  263  mysql
+  264  mysql -uroot
+  265  flyway -url="jdbc:mysql://localhost:3306/tracker_dev" -locations=filesystem:databases/tracker clean migrate
+  266  mysql -uroot
+  267  flyway -url="jdbc:mysql://localhost:3306/tracker_dev" -locations=filesystem:databases/tracker clean migrate
+  268  mysql -uroot
+  269  cf target
+  270  cf space
+  271  space
+  272  cf space;
+  273  clear
+  274  cf target -s review
+  275  cf create space review
+  276  cf create-space review
+  277  cf target -s review
+  278  cf apps
+  279  cf create-space production
+  280  cf apps
+  281  clear
+  282  cf create-service pal-mysql p-mysql tracker-database
+  283  cf create-service pal-mysql2 p-mysql tracker-database
+  284  cf marketplace
+  285  cf create-service p-mysql p-mysql tracker-database
+  286  cf target
+  287  cf target -s production
+  288  cf create-service p-mysql p-mysql tracker-database
+  289  cf services
+  290  cf apps
+  291  cf target -s review
+  292  cf apps
+  293  fly --target pal-concourse login --concourse-url https://concourse.longs.pal.pivotal.io --team-name kushal-paudyal
+  294  fly -t pal-concourse set-pipeline -p pal-tracker --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  295  cd ..
+  296  ls
+  297  cd ..
+  298  ls
+  299  ssh-keygen -t rsa -b 4096 -C "kushalzone@gmail.com"
+  300  ls
+  301  vi gitkey.pub
+  302  vi gitkey
+  303  cd workspace/pal-tracker
+  304  fly -t pal-concourse set-pipeline -p pal-tracker --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  305  fly -t pal-concourse destroy-pipeline -p pal-tracker
+  306  fly -t pal-concourse set-pipeline -p pal-tracker --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  307  fly -t pal-concourse destroy-pipeline -p pal-tracker
+  308  fly -t pal-concourse set-pipeline -p pal-tracker --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  309  fly -t pal-concourse destroy-pipeline -p pal-tracker
+  310  fly -t pal-concourse set-pipeline -p pal-tracker --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  311  cf target -s review
+  312  cf target -s production
+  313  cf bind-service pal-tracker tracker-database
+  314  cf target -s review
+  315  cf env pal-tracker
+  316  cf target -
+  317  cf env pal-tracker
+  318  fly -t pal-concourse set-pipeline -p pal-tracker --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  319  cf target -s review
+  320  fly -t pal-concourse set-pipeline -p pal-tracker --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  321  cf target -s review
+  322  fly -t pal-concourse set-pipeline -p pal-tracker --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  323  ../assignment-submission/
+  324  cd -
+  325  cd workspace/pal-tracker
+  326  cf target -s production
+  327  cf env pal-tracker
+  328  cd ../assignment-submission/
+  329  ./gradlew cloudNativeDeveloperDatabaseMigrations -PserverUrl=https://kushal-paudyal-ps-pal-tracker-review.apps.longs.pal.pivotal.io/
+  330  cd ../pal-tracker
+  331  git status
+  332  git add ci
+  333  git status
+  334  git commit -m "Indentation correction"
+  335  git push
+  336  git pull
+  337  git cherry-pick jdbc-start
+  338  mysql -uroot
+  339  ./gradlew clean build
+  340  ./gradlew clean build test
+  341  ./gradlew clean build bootRun
+  342  ./gradlew clean build
+  343  ./gradlew clean build env = SPRING_DATASOURCE_URL
+  344  ./gradlew clean build -SPRING_DATASOURCE_URL=test
+  345  ./gradlew clean build -DSPRING_DATASOURCE_URL=test
+  346  ./gradlew clean build
+  347  ./gradlew clean build -Denv=review
+  348  ./gradlew clean build
+  349  mysql
+  350  mysql -uroot
+  351  flyway -url="jdbc:mysql://localhost:3306/tracker_test" -locations=filesystem:databases/tracker clean migrate
+  352  mysql
+  353  mysql -uroot
+  354  ./gradlew clean build
+  355  mysql
+  356  mysql -uroot
+  357  ./gradlew clean build
+  358  ls
+  359  mysql
+  360  mysql -uroot
+  361  ./gradlew clean build
+  362  mysql -uroot
+  363  ./gradlew clean build
+  364  mysql -uroot
+  365  ./gradlew clean build
+  366  git status
+  367  git add src
+  368  git status
+  369  git add mani*.*
+  370  git add build*
+  371  git add build*.*
+  372  git status
+  373  git commit -m"Time Tracker JDBC Template Lab"
+  374  git push
+  375  git status
+  376  git add build*.*
+  377  git status
+  378  git add ci
+  379  git status
+  380  git commit -m"misc"
+  381  git push
+  382  git add ci
+  383  git commit -m"Changed user"
+  384  git push
+  385  cf target -s review
+  386  cf env pal-tracker
+  387  cf target -s production
+  388  cf env pal-tracker
+  389  git status
+  390  git add ci
+  391  git status
+  392  git commit -m"Reverting"
+  393  git push
+  394  history
+  395  fly -t pal-concourse destroy-pipeline -p pal-tracker
+  396  fly -t pal-concourse set-pipeline -p pal-tracker --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  397  cf env pal-tracker
+  398  cf target
+  399  cd target -s review
+  400  cf target -s review
+  401  cf env pal-tracker
+  402  ./gradlew clean assmemble
+  403  ./gradlew clean assemble
+  404  ./gradlew clean
+  405  ./gradlew assemble
+  406  jps
+  407  ./gradlew --stop
+  408  jps
+  409  ./gradlew clean
+  410  ./gradlew assemble
+  411  java -jar build/libs/pal-tracker.jar 
+  412  cf push -p build/libs/pal-tracker.jar
+  413  git status
+  414  git add src
+  415  git status
+  416  git checkout out
+  417  git status
+  418  vi .gitignore
+  419  git add .gitignore
+  420  git status
+  421  git commit -m"Fixed DataSource"
+  422  git push
+  423  cf restage pal-tracker
+  424  cf push pal-tracker -p build/libs/pal-tracker.jar
+  425  cf apps
+  426  cd ../assignment-submission/
+  427  ./gradlew coludNativeDeveloperDatabaseMigrations -PserverUrl=https://kushal-paudyal-ps-pal-tracker.apps.longs.pal.pivotal.io/
+  428  ./gradlew coludNativeDeveloperDatabaseAccess -PserverUrl=https://kushal-paudyal-ps-pal-tracker.apps.longs.pal.pivotal.io/
+  429  ./gradlew cloudNativeDeveloperDatabaseAccess -PserverUrl=https://kushal-paudyal-ps-pal-tracker.apps.longs.pal.pivotal.io/
+  430  history
+  431  ssh-keygen -t rsa -b 4096 -C "kushalzone@gmail.com"
+  432  ls -al
+  433  vi key_pd.pub
+  434  cd workspace/pal-tracker-distributed/
+  435  fly -t pal-concourse set-pipeline -
+  436  cf restage
+  437  fly -t pal-concourse stage-pipeline -p pal-tracker-distributed
+  438  fly -t pal-concourse restage-pipeline -p pal-tracker-distributed
+  439  fly -t pal-concourse restage -p pal-tracker-distributed
+  440  fly -t pal-concourse destroy-pipeline -p pal-tracker-distributed
+  441  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  442  fly -t pal-concourse destroy-pipeline -p pal-tracker-distributed
+  443  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  444  fly -t pal-concourse login
+  445  fly -t pal-concourse destroy-pipeline -p pal-tracker-distributed
+  446  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  447  fly -t pal-concourse destroy-pipeline -p pal-tracker-distributed
+  448  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  449  cf target
+  450  cf create-space sandbox
+  451  cf target -s sandbox
+  452  cf create-service p-mysql p-mysql tracker-allocations-database
+  453  cf create-service p-mysql p-mysql tracker-backlog-database
+  454  cf create-service p-mysql p-mysql tracker-registration-database
+  455  cf create-service p-mysql p-mysql tracker-timesheets-database
+  456  fly -t pal-concourse destroy-pipeline -p pal-tracker-distributed
+  457  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  458  cf target -s sandbox
+  459  cf env pal-tracker-distributed
+  460  history
+  461  cf env pal-traker-distributed
+  462  cf env pal-traker
+  463  ./gradlew cfMigrate
+  464  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/registration -d'{"name": "Pete"}'
+  465  curl -i localhost:8083/users/1
+  466  curl -i localhost:8083/accounts?ownerId=1
+  467  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Basket Weaving\", \"accountId\": ${ACCOUNT_ID}}"
+  468  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Basket Weaving\", \"accountId\": 1}"
+  469  curl -i localhost:8083/projects?accountId=1
+  470  curl -i -XPOST -H"Content-Type: application/json" localhost:8081/allocations -d"{\"projectId\": ${PROJECT_ID}, \"userId\": ${USER_ID}, \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  471  curl -i -XPOST -H"Content-Type: application/json" localhost:8081/allocations -d"{\"projectId\": 1, \"userId\": 1, \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  472  curl -i localhost:8081/allocations?projectId=1
+  473  curl -i -XPOST -H"Content-Type: application/json" localhost:8082/stories -d"{\"projectId\": 1, \"name\": \"Find some reeds\"}"
+  474  curl -i localhost:8082/stories?projectId=1
+  475  curl -i -XPOST -H"Content-Type: application/json" localhost:8084/time-entries/ -d"{\"projectId\": 1, \"userId\": 1, \"date\": \"2015-05-17\", \"hours\": 6}"
+  476  curl -i localhost:8084/time-entries?userId=1
+  477  git logout
+  478  hit --help
+  479  git config --global user.email "plnvbs@gmail.com"
+  480  git config --global user.user "srirampvvm"
+  481  git status
+  482  cf env pal-tracker
+  483  cd workspace/
+  484  cd pal-tracker
+  485  git add remote origin2 https://github.com/srirampvvm/pal-tracker.git
+  486  git remote add origin2 https://github.com/srirampvvm/pal-tracker.git
+  487  git push -origin2 master
+  488  git push -origin2
+  489  git remotes
+  490  git remote
+  491  git push -u origin2
+  492  git cherry-pick actuator-start
+  493  ./gradlew clean build
+  494  cd ..
+  495  git clone https://github.com/kushalzone/pal-tracker-distributed.git
+  496  cd pal-tracker-distributed/
+  497  git branch
+  498  git checkout -b my-work
+  499  git branch
+  500  git push -u origin my-work
+  501  ./gradlew dependenciesGraph
+  502  ls -al
+  503  open build/dependenciesGraph/graph.dot.png
+  504  mysql -uroot < databases/create_databases.sql
+  505  mysql -uroot
+  506  gradlew devMigrate testMigrate
+  507  ./gradlew devMigrate testMigrate
+  508  ./gradlew clean build
+  509  ./gradlew applications:registraton-server:bootRun
+  510  ls -al
+  511  cd applications
+  512  ls
+  513  cd registration-server/
+  514  ls
+  515  ./gradlew applications:registraton-server:bootRun
+  516  cd ../..
+  517  ls
+  518  ./gradlew applications:registraton-server:bootRun
+  519  ./gradlew applications:registration-server:bootRun
+  520  ./gradlew apbootRun --parallel
+  521  ./gradlew bootRun --parallel
+  522  ./gradlew cloudNativeDeveloperDistributedSystemDeployment -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/
+  523  cd ../assignment-submission/
+  524  ./gradlew cloudNativeDeveloperDistributedSystemDeployment -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/
+  525  cd workspaces
+  526  ls
+  527  cd workspace/
+  528  cd assignment-submission/
+  529  ./gradlew cloudNativeDeveloperDistributedSystemDeployment -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/
+  530  ./gradlew cloudNativeDeveloperDistributedSystemDeployment -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/
+  531  cd ..
+  532  cd pal-tracker-distributed/
+  533  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  534  ./gradlew cfMigrate
+  535  fly -t pal-concourse destroy-pipeline -p pal-tracker-distributed
+  536  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  537  fly -t pal-concourse destroy-pipeline -p pal-tracker-distributed
+  538  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  539  ./gradlew cfMigrate
+  540  ./gradlew cloudNativeDeveloperDistributedSystemDeployment -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/
+  541  cd ../assignment-submission/
+  542  ./gradlew cloudNativeDeveloperDistributedSystemDeployment -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/
+  543  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  544  cd..
+  545  cd ..
+  546  cd works
+  547  ls
+  548  cd pal-tracker-distributed/
+  549  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  550  cd ..
+  551  ls
+  552  cd assignment-submission/
+  553  ls
+  554  ./gradlew cloudNativeDeveloperDistributedSystemDeployment -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/
+  555  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  556  cd ..
+  557  cd pal-tracker-distributed/
+  558  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  559  ./gradlew cloudNativeDeveloperDistributedSystemDeployment -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/
+  560  cd ..
+  561  cd assignment-submission/
+  562  ./gradlew cloudNativeDeveloperDistributedSystemDeployment -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/
+  563  cd ..
+  564  ls
+  565  cd pal-tracker
+  566  git pull
+  567  git status
+  568  git add build.gradle
+  569  clear
+  570  git status
+  571  git diff build.gradle
+  572  clear
+  573  git cherry-pick security-start
+  574  clear
+  575  git status
+  576  git reset head
+  577  git reset HEAD
+  578  clear
+  579  ls
+  580  git status
+  581  git cherry-pick security-start
+  582  git status
+  583  git push
+  584  exit
+  585  df
+  586  df -m
+  587  ls
+  588  clear
+  589  ls
+  590  cd workspace/
+  591  ls
+  592  cd pal-tracker-distributed
+  593  ls
+  594  git push
+  595  clear
+  596  exit
+  597  ls
+  598  cf push -f manifest-backlog.yml 
+  599  clear
+  600  exit
+  601  cd workspace/
+  602  ls
+  603  cd pal-tracker-distributed/
+  604  ls
+  605  git status
+  606  cd ..
+  607  ls
+  608  cd pal-tracker
+  609  ls
+  610  git status
+  611  cd ..
+  612  cd pal-tracker
+  613  cd ..
+  614  cd pal-tracker-distributed/
+  615  clear
+  616  cd ..
+  617  mkdir platform-services
+  618  cd platform-services/
+  619  mkdir eureka-server
+  620  cd eureka-server/
+  621  touch build.gradle
+  622  vi build.gradle
+  623  ls
+  624  vi settings.gradle
+  625  cd  ..
+  626  cd ..
+  627  rm -rf platform-services/
+  628  cd pal-tracker-distributed/
+  629  cd platform-services/
+  630  ls
+  631  cd ..
+  632  ./gradlew platform-services:eureka-server:bootRun
+  633  clear
+  634  ./gradlew platform-services:eureka-server:bootRun
+  635  exit
+  636  cf push -f manifest-timesheets.yml 
+  637  cf push -f manifest-registration.yml 
+  638  cd ../assignment-submission/
+  639  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/
+  640  cf logs --recent
+  641  cf apps
+  642  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/
+  643  cd ..
+  644  ls
+  645  cd pal-tracker-distributed/
+  646  ls
+  647  cf push -fmanifest-allocations.yml 
+  648  cf push -f manifest-allocations.yml 
+  649  exit
+  650  cf push -f manifest-registration.yml 
+  651  exit
+  652  ls
+  653  cf push -f manifest-timesheets.yml 
+  654  exit
+  655  cd workspace/
+  656  cd pal-tracker-distributed/
+  657  ./gradlew :applications:allocations-server:dependencies
+  658  ./gradlew clean build
+  659  ./gradlew clean build --stacktrace
+  660  ./gradlew clean build bootRun
+  661  ./gradlew clean build
+  662  git status
+  663  git add applications
+  664  git status
+  665  git add ci
+  666  git add integration-test/
+  667  git add platform-services/
+  668  git status
+  669  git add components/
+  670  git add build.gradle 
+  671  git add settings.gradle 
+  672  git status
+  673  git commit -m"Eureka Config Server
+  674  "
+  675  git push
+  676  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  677  fly --target pal-concourse login --concourse-url htts://concourse.longs.pal.pivotal.io --team-name kushal-paudyal
+  678  fly --target pal-concourse login --concourse-url https://concourse.longs.pal.pivotal.io --team-name kushal-paudyal
+  679  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  680  git remotes
+  681  git remote
+  682  git remote add origin2 https://github.com/gkgowdar/pal-tracker-distributed.git
+  683  git push origin2
+  684  git push origin2 --force
+  685  git pull
+  686  git push origin2 --force
+  687  git branches
+  688  git branch
+  689  git chekout master
+  690  git checkout master
+  691  git merge my-work
+  692  git status
+  693  git branch
+  694  git push
+  695  git pull
+  696  git push
+  697  git push origin2 --force
+  698  cf marketplace
+  699  cf help marketplace
+  700  cf marketplace -s p-config-server
+  701  cf services
+  702  cf target
+  703  cf marketplace
+  704  cf create-service p-service-registry standard tracker-service-registry
+  705  cf services
+  706  git status
+  707  git add .
+  708  git status
+  709  git commit -m"Modified configs to use Registry Server"
+  710  git push
+  711  git push origin2
+  712  ls
+  713  ./gradlew clean build
+  714  ls
+  715  cd applications
+  716  ls
+  717  cf push allocations-server/build/libs/allocations-server.jar
+  718  cf help push
+  719  cd ..
+  720  ls
+  721  cf push -f manifest-allocations.yml
+  722  cf push -f manifest-backlog.yml
+  723  cf push -f manifest-registration.yml
+  724  cf push -f manifest-timesheets.yml
+  725  cd ~/workspace/assignment-submission
+  726  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io
+  727  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/ --stacktrace
+  728  ./gradlew :applications:allocations-server:dependencies
+  729  cd ../pal-tracker-distributed/
+  730  ./gradlew :applications:allocations-server:dependencies
+  731  ./gradlew clean build
+  732  ls
+  733  cf push -f manifest-allocations.yml 
+  734  clear
+  735  cd ~/workspace/assignment
+  736  cd ~/workspace/assignment-submission/
+  737  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/ --stacktrace
+  738  exit
+  739  cf push -f manifest-backlog.yml 
+  740  ./gradlew clean build
+  741  cf push -f manifest-timesheets.yml 
+  742  exit
+  743  cf push -f manifest-allocations.yml 
+  744  exit
+  745  cf push -f manifest-registration.yml 
+  746  exit
+  747  cf push -f manifest-backlog.yml 
+  748  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/ --stacktrace
+  749  cd ..
+  750  cd assignment-submission/
+  751  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/ --stacktrace
+  752  history
+  753  cf service
+  754  cf services
+  755  cf delete-service tracker-service-registry 
+  756  cf services
+  757  cf create-service p-service-registry standard tracker-service-registry
+  758  cd ..
+  759  cd pal-tracker-distributed/
+  760  ls
+  761  cf target
+  762  cf push -f manifest-allocations.yml 
+  763  cf services
+  764  cf push -f manifest-allocations.yml
+  765  cf push -f manifest-backlog.yml
+  766  cf push -f manifest-registration.yml
+  767  cf push -f manifest-timesheets.yml
+  768  git status
+  769  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  770  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml -sync
+  771  fly -t pal-concourse sync
+  772  fly -t pal-concourse set-pipeline -p pal-tracker-distributed --load-vars-from ci/variables.yml -c ci/pipeline.yml
+  773  git status
+  774  git log
+  775  git cherry-pick service-discovery-solution
+  776  git cherry-pick --abort
+  777  git status
+  778  git cherry-pick service-discovery-solution
+  779  git cherry-pick --abort
+  780  git checkout -b service-discovery-solution
+  781  git status
+  782  git checkout master
+  783  git status
+  784  git add -p
+  785  git commit -m "match service discovery solution with this"
+  786  gs
+  787  git status
+  788  git push
+  789  git status
+  790  git add -p
+  791  git commit -m "remove classes folder"
+  792  git status
+  793  git push
+  794  git checkout my-work
+  795  git merge master
+  796  git status
+  797  git push
+  798  cd ..
+  799  cd assignment-submission/
+  800  ./gradlew cloudNativeDeveloperDistributedSystemWithServiceDiscovery -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/
+  801  cd ..
+  802  cd pal-tracker-distributed/
+  803  ./gradlew clean build
+  804  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Project A\", \"accountId\": \"${ACCOUNT_ID}\"}"
+  805  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Project A\", \"accountId\": \"1\"}"
+  806  curl -i localhost:8083/accounts?ownerId=1
+  807  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Project A\", \"accountId\": \"1\"}"
+  808  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Project A\", \"accountId\": \"2\"}"
+  809  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Project B\", \"accountId\": \"1\"}"
+  810  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Project B\", \"accountId\": \"2\"}"
+  811  curl -i -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Project C\", \"accountId\": \"3\"}"
+  812  curl -i -XPOST -H"Content-Type: application/json" localhost:8081/allocations/ -d"{\"projectId\": \"$1\", \"userId\": \"1\", \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}"
+  813  curl -i -XPOST -H"Content-Type: application/json" localhost:8081/allocations/ -d"{\"projectId\": \"1\", \"userId\": \"1\", \"firstDay\": \"2015-05-17\", \"lastDay\": \"2015-05-18\"}
+  814  cd assignment-submission/clear
+  815  clear
+  816  cf marketplace
+  817  git status
+  818  git add .
+  819  git push
+  820  git chekout my-work
+  821  git checkout my-work
+  822  git merge master
+  823  git branch
+  824  git push
+  825  git branch
+  826  git status
+  827  git commit -m"Circuit Breaker Lab"
+  828  git push
+  829  git status
+  830  git branch
+  831  git checkout master
+  832  git branch
+  833  cf logs tracker-registration --recent
+  834  cd ~/workspace/assignment-submission
+  835  ./gradlew cloudNativeDeveloperDistributedSystemWithCircuitBreaker -PregistrationServerUrl=https://registration-pal-kp.apps.longs.pal.pivotal.io/ -PbacklogServerUrl=https://backlog-pal-kp.apps.longs.pal.pivotal.io/ -PallocationsServerUrl=https://allocations-pal-kp.apps.longs.pal.pivotal.io/ -PtimesheetsServerUrl=https://timesheets-pal-kp.apps.longs.pal.pivotal.io/
+  836  git push orig2
+  837  git push orgin 2
+  838  git push orgin2
+  839  git push orig2
+  840  git push origin2
+  841  cd ..
+  842  cd pal-tracker-distributed/
+  843  git push origin2
+  844  exit
+  845  fly --target pal-concourse login --concourse-url https://concourse.longs.pal.pivotal.io --team-name mahanthi-bukkapatnam
+  846  cf push moviefun -p target/moviefun.war --random-route
+  847  cf target
+  848  cf login -a api.run.pivotal.io
+  849  cf login -a api.sys.longs.pal.pivotal.io
+  850  cf push moviefun -p target/moviefun.war --random-route
+  851  MOVIE_FUN_URL=https://movie-fun-app-fluent-genet.apps.longs.pal.pivotal.io/ mvn test
+  852  curl https://movie-fun-app-fluent-genet.apps.longs.pal.pivotal.io/
+  853  clear
+  854  curl https://movie-fun-app-fluent-genet.apps.longs.pal.pivotal.io/
+  855  curl --help
+  856  clear
+  857  curl -o website https://movie-fun-app-fluent-genet.apps.longs.pal.pivotal.io/
+  858  ls
+  859  MOVIE_FUN_URL=https://movie-fun-app-fluent-genet.apps.longs.pal.pivotal.io/ mvn test
+  860  MOVIE_FUN_URL=https://movie-fun-app-fluent-genet.apps.longs.pal.pivotal.io mvn test
+  861  cf push moviefun -p target/moviefun.war -b https://github.com/cloudfoundry-community/tomee-buildpack.git --random-route
+  862  MOVIE_FUN_URL=https://movie-fun-app-fluent-genet.apps.longs.pal.pivotal.io mvn test
+  863  clear
+  864  cf push moviefun -p target/moviefun.war -b https://github.com/cloudfoundry-community/tomee-buildpack.git --random-route
+  865  clear
+  866  git remotes
+  867  git show remotes
+  868  git remotes
+  869  git remote
+  870  git remote show origin
+  871  git remote add origin2 https://github.com/kushalzone/apps-movie-fun-code.git
+  872  git status
+  873  rm -rf website
+  874  ls
+  875  exit
+  876  cd workspace/
+  877  ls
+  878  cf apps
+  879  clear
+  880  ls
+  881  cf restart moviefun
+  882  cf marketplac
+  883  ecf marketplace
+  884  cf marketplace
+  885  clear
+  886  cf restage moviefun
+  887  clear
+  888  MOVIE_FUN_URL=https://moviefun-comedic-elephant.apps.longs.pal.pivotal.io/ mvn test
+  889  cd apps-movie-fun-code/
+  890  cd ..
+  891  dir
+  892  cd apps-movie-fun-code/
+  893  MOVIE_FUN_URL=https://moviefun-comedic-elephant.apps.longs.pal.pivotal.io/ mvn test
+  894  mysql -uroot
+  895  MOVIE_FUN_URL=http://localhost:8080 mvn test
+  896  clear
+  897  MOVIE_FUN_URL=http://localhost:8080 mvn test
+  898* 
+  899  MOVIE_FUN_URL=http://localhost:8080 mvn test
+  900  clear
+  901  mvn clean package
+  902  MOVIE_FUN_URL=http://localhost:8080 mvn test
+  903  MOVIE_FUN_URL=http://localhost:8080 mvn clean package
+  904  clear
+  905  cf push moviefun -p target/moviefun.war -b java_buildpack_offline --random-route
+  906  cf restage moviefun
+  907  cd ~/workspace/assignment-submission
+  908  ./gradlew replatformingSpringBootification -PmovieFunUrl=https://moviefun-comedic-elephant.apps.longs.pal.pivotal.io/
+  909  cd ..
+  910  ls
+  911  cd apps-movie-fun-code/
+  912  ls
+  913  git status
+  914  git add .
+  915  git push origin2
+  916  git commit -m"Movie App Fun Exercise"
+  917  git status
+  918  git push origin2
+  919  git push
+  920  clear
+  921  git checkout two-data-sources-start
+  922  dir
+  923  git branch
+  924  dir
+  925  git checkout -b my-branch
+  926  git commit -am "work in progress"
+  927  git checkout two-data-sources-start
+  928  git reset --hard refs/tags/two-data-sources-start
+  929  git clean -df
+  930  git status
+  931  mvn clean build
+  932  mvn clean package
+  933  cf push target/moviefun.war
+  934  history > history.txt
