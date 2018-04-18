@@ -18,7 +18,7 @@ import static com.fasterxml.jackson.dataformat.csv.CsvSchema.ColumnType.NUMBER;
 import static org.superbiz.moviefun.CsvUtils.readFromCsv;
 
 @Service
-public class AlbumsUpdater {
+public class  AlbumsUpdater {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
     private final ObjectReader objectReader;
