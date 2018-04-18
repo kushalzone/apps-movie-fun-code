@@ -5,6 +5,10 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/movies?useSSL=false
     username: root
+<<<<<<< HEAD
+=======
+
+>>>>>>> my-work
   mvc.view:
     prefix: /WEB-INF/
     suffix: .jsp

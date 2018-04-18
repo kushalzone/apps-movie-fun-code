@@ -18,6 +18,11 @@ package org.superbiz.moviefun;
 
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Component;
+<<<<<<< HEAD
+=======
+import org.superbiz.moviefun.movies.Movie;
+import org.superbiz.moviefun.movies.MoviesBean;
+>>>>>>> my-work
 
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -30,7 +35,10 @@ import java.util.List;
 /**
  * @version $Revision$ $Date$
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> my-work
 @Component
 public class ActionServlet extends HttpServlet {
 
